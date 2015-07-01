@@ -1,4 +1,5 @@
-/*! ========================================================================
+/**! ========================================================================
+ * @license
  * Bootstrap Toggle: bootstrap2-toggle.js v2.2.0
  * http://www.bootstraptoggle.com
  * ========================================================================
@@ -73,8 +74,8 @@
 		})
 		this.$toggle.append($toggleGroup)
 
-		var width = this.options.width || Math.max($toggleOn.width(), $toggleOff.width())+($toggleHandle.outerWidth()/2)
-		var height = this.options.height || Math.max($toggleOn.height(), $toggleOff.height())
+		var width = this.options.width || Math.max($toggleOn.outerWidth(), $toggleOff.outerWidth())+($toggleHandle.outerWidth()/2)
+		var height = this.options.height || Math.max($toggleOn.outerHeight(), $toggleOff.outerHeight())
 		$toggleOn.addClass('toggle-on')
 		$toggleOff.addClass('toggle-off')
 		this.$toggle.css({ width: width, height: height })
